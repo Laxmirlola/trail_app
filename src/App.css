@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .sign-in {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.event-heading {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #333;
+  border: 0.2rem solid #ff9800;
+  border-radius: 2rem;
+  display: flex;
+  background: linear-gradient(to bottom, #1a1a1a, #492e06);
+}
+
+.event-heading h1 {
+  font-size: 36px;
+  margin-top: 0px;
+  color: #ff9800;
+}
+
+.event-heading .date {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ff9800;
+}
+
+.event-heading .event-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.event-heading .heading-left {
+  width: 70%;
+}
+
+.event-img {
+  width: 100%;
+  height: 16rem;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ff9800;
+  background-color: #ff9800;
+}
+
+.register-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.register-section .register-button {
+  background-color: #201e1a;
+  border: 0.1rem solid #ff9800;
+  background: linear-gradient(to bottom, #1a1a1a, #492e06);
+
+  width: 100%;
+  height: 3rem;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.register-section .material-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.register-section .material-buttons button {
+  background-color: #201e1a;
+  border: 0.1rem solid #ff9800;
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  color: #ff9800;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.instructors {
+  padding: 3rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.instructors h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.instructor {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border: 0.2rem solid #ff9800;
+  border-radius: 1rem;
+  display: flex;
+  background: linear-gradient(to bottom, #1a1a1a, #492e06);
+}
+
+.instructor .instructor-img {
+  width: 20%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #ff9800;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.instructor .instructor-info {
+  width: 30%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instructor .instructor-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.instructor .social-icons a {
+  margin-right: 10px;
+}
+
+.instructor .social-icons img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.instructor-description {
+  width: 70%;
+  height: 90px;
+  font-size: 16px;
+  color: #aaa;
+  padding: 1.5rem 0.3rem;
+  overflow: auto;
+}
+
+.map {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.map h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.map .map-image {
+  background-color: #333;
+  padding: 5rem;
+  font-size: 3rem;
+  border: 0.2rem solid #ff9800;
+  border-radius: 1rem;
+}
