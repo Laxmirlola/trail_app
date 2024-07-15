@@ -11,41 +11,16 @@ body {
   padding: 20px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #333;
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header nav a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-header .sign-in {
-  background-color: #ff9800;
-  border: none;
-  padding: 10px 20px;
-  color: #fff;
-  cursor: pointer;
-}
-
 .event-heading {
-  width: 100%;
+  width: 97%;
   padding: 1rem 1rem;
   border-bottom: 1px solid #333;
   border: 0.2rem solid #ff9800;
   border-radius: 2rem;
   display: flex;
   background: linear-gradient(to bottom, #1a1a1a, #492e06);
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added box-shadow property */
 }
 
 .event-heading h1 {
@@ -63,10 +38,13 @@ header .sign-in {
 .event-heading .event-description {
   font-size: 16px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .event-heading .heading-left {
-  width: 70%;
+  width: 100%;
+  max-width: 65%;
+  padding-right: 1rem;
 }
 
 .event-img {
@@ -81,7 +59,8 @@ header .sign-in {
 }
 
 .register-section {
-  width: 30%;
+  width: 100%;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +71,6 @@ header .sign-in {
   background-color: #201e1a;
   border: 0.1rem solid #ff9800;
   background: linear-gradient(to bottom, #1a1a1a, #492e06);
-
   width: 100%;
   height: 3rem;
   padding: 10px 20px;
@@ -103,6 +81,12 @@ header .sign-in {
   font-weight: bold;
   margin-bottom: 1rem;
   color: #ff9800;
+  transition: transform 0.3s ease;
+}
+
+.register-section .register-button:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px wheat;
 }
 
 .register-section .material-buttons {
@@ -120,6 +104,47 @@ header .sign-in {
   margin-right: 10px;
   cursor: pointer;
   font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.register-section .material-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px wheat;
+}
+.register-section .material-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.register-section .material-buttons button {
+  background-color: #201e1a;
+  border: 0.1rem solid #ff9800;
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  color: #ff9800;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.register-section .material-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.instructors {
+  padding: 3rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.instructors h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  color: #ff9800;
+  font-weight: bold;
 }
 
 .instructors {
@@ -176,9 +201,12 @@ header .sign-in {
   margin-right: 10px;
 }
 
-.instructor .social-icons img {
-  width: 2rem;
-  height: 2rem;
+svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+  color: #ff9800;
+  font-size: 2rem;
 }
 
 .instructor-description {
@@ -209,3 +237,46 @@ header .sign-in {
   border: 0.2rem solid #ff9800;
   border-radius: 1rem;
 }
+
+@media (max-width: 768px) {
+  .event-heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-heading {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .event-heading .heading-left {
+    max-width: 90%;
+    width: 100%;
+    padding: 1rem;
+  }
+  .register-section {
+    max-width: 90%;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .register-section .register-button {
+    width: 100%;
+  }
+
+  .instructor .instructor-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .instructor .instructor-info {
+    width: 100%;
+  }
+
+  .instructor-description {
+    width: 100%;
+  }
+}
+
